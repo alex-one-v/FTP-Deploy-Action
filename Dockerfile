@@ -7,6 +7,7 @@ RUN apt-get update
 RUN apt-get install -y git
 RUN apt-get install -y git-ftp
 RUN apt-get install -y nodejs
+RUN apt-get install git-lfs
 
 COPY dist/index.js /deploy.js
 RUN chmod +x deploy.js
